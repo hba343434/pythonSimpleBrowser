@@ -18,6 +18,7 @@ def browser(target,path,port=80):
             print('______________end or response___________________')
             break
         print('\n'+data.decode())
+    client.close()
 
 if __name__=="__main__":
     parse=argparse.ArgumentParser(description="python simple browser")
