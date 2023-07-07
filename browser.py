@@ -8,7 +8,7 @@ def browser(target,path,port=80):
     t=target.split('/')[2]
     
     client.connect((t,port))
-    url=f"GET {path} HTTP/1.1\r\nHost: {target}\n\n".encode()
+    url=f"GET {path} HTTP/1.1\r\nHost: {t}\n\n".encode()
     
     client.send(url)
     while True:
